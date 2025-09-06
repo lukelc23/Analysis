@@ -11,6 +11,7 @@ class Dual:
         self.p = p
         self.q = q
         self.c_var = c_var
+        self.c_analytical = 10000
 
         #calculated params
         self.alpha = 1 - (2 * ((k_o - k_d)/(k_s - k_d)))
@@ -401,6 +402,7 @@ class Dual:
             return rank
 
         assert np.isclose(c_analytical_form(), c[1])
+        self.c_analytical = c_double_til()
 
         #Non Exception Ranking
 

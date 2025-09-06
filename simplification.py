@@ -19,3 +19,4 @@ expression = 1 + (
 simplified_expression = sp.simplify(expression)
 
 print(simplified_expression)
+
