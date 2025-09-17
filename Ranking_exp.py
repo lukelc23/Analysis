@@ -499,8 +499,6 @@ class Ranking_exp:
 
         def rank_mult_exp_analytical(j):
             rank = rank_til(j) + c_analytical_form() * alpha_prime * (D_ij_analytical_sol(j, q) - D_ij_analytical_sol(j, p) + delta(j,q) - delta(j,p))
-            print(f'D_jq_analytical_sol: {D_ij_analytical_sol(j, q)}')
-            print(f'D_jp_analytical_sol: {D_ij_analytical_sol(j, p)}')
             return rank
 
         #Non Exception Ranking
